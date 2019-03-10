@@ -49,7 +49,7 @@ hr {
 			font-size: 40px;
 		}
 		&__lowercase {
-			margin-top: -15px;
+			margin-top: -23px;
 			color: #fffefe;
 			color: #fefefe;
 			font-size: 26px;
@@ -63,11 +63,11 @@ hr {
 	margin-top: 40px;
 	color: #3e3e3e;
 	font-family: 'Raleway', sans-serif;
-	font-size: 22px;
+	font-size: 20px;
 	box-shadow: 0 8px 11px rgba(54, 54, 54, 0.15);
 	border-radius: 10px;
 	background-color: $light-color;
-	padding: 26px 30px;
+	padding: 28px 36px;
 	position: relative;
 	span {
 		margin-left: 46px;
@@ -91,4 +91,8 @@ hr {
 	background-color: #4894ce;
 	opacity: 0.7;
 	border: none;
+}
+.fas.fa-plus,.fas.fa-equals {
+	font-size: 30px;
+	padding: 13px;
 }
