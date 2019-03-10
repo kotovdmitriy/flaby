@@ -39,6 +39,10 @@ hr {
 		font-family: 'Raleway', sans-serif;
 		font-size: 17px;
 		outline: none;
+		cursor: pointer;
+		&:hover {
+			background-color: darken(#479ee1, 5);
+		}
 	}
 	&-text {
 		margin-top: 255px;
@@ -66,9 +70,15 @@ hr {
 	font-size: 20px;
 	box-shadow: 0 8px 11px rgba(54, 54, 54, 0.15);
 	border-radius: 10px;
+	border: none;
 	background-color: $light-color;
 	padding: 28px 36px;
 	position: relative;
+	cursor: pointer;
+	outline: none;
+	&:hover {
+		background-color: darken($light-color, 5);
+	}
 	span {
 		margin-left: 46px;
 	}
@@ -88,9 +98,13 @@ hr {
 	line-height: 40px;
 	padding: 20px 68px;
 	border-radius: 10px;
-	background-color: #4894ce;
-	opacity: 0.7;
+	background-color: rgba(#4894ce, .7);
 	border: none;
+	cursor: pointer;
+	outline: none;
+	&:hover {
+		background-color: darken(#4894ce, 5);
+	}
 }
 .fas.fa-plus,.fas.fa-equals {
 	font-size: 30px;

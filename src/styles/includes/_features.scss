@@ -1,0 +1,50 @@
+.features {
+	display: flex;
+	background-image: url(../img/feature-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	&-img {
+		margin-top: 118px;
+	}
+	&-block {
+		margin-left: -44px;
+		max-width: 520px;
+	}
+	&-subtitle {
+		margin-top: 136px;
+		color: rgba($title-color, .4);
+		font-family: 'Raleway', sans-serif;
+		font-size: 22px;
+	}
+	&-title {
+		margin-top: 17px;
+		color: $title-color;
+		font-family: 'Raleway', sans-serif;
+		font-size: 32px;
+	}
+	&-text {
+		margin-top: 20px;
+		margin-bottom: 56px;
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 32px;
+	}
+	&-item {
+		margin-left: 40px;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 25px;
+		position: relative;
+		&:before {
+			content: url(../img/icons/dot-icon.png);
+			position: absolute;
+			left: -40px;
+			top: 3px;
+		}
+	}
+}
+
+.section-btn {
+	margin-top: 34px;
+	margin-left: 7px;
+}

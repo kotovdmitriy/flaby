@@ -32,7 +32,6 @@ body {
 	font-size: 24px;
 	font-weight: bold;
 	text-transform: uppercase;
-	text-align: center;
 	letter-spacing: 0.75px;
 }
 
@@ -41,5 +40,18 @@ body {
 	font-family: "Roboto Slab";
 	font-size: 18px;
 	line-height: 24px;
-	text-align: center;
+}
+
+.section-btn {
+	color: $light-color;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1.4px;
+	box-shadow: 0 10px 16px rgba(102, 212, 244, 0.3);
+	border-radius: 25px;
+	border: none;
+	background-color: #66d4f4;
+	padding: 17px 29px;
 }
