@@ -4,6 +4,8 @@
 @import "utils/fonts";
 @import "libs";
 @import "includes/header";
+@import "includes/services";
+@import "includes/features";
 
 
 body {
@@ -12,12 +14,32 @@ body {
 	box-sizing: border-box;
 	font-family: 'Raleway', sans-serif;
 	color: $text-color;
-	background-color: rgba(#000, .75);
 }
 .container {
 	max-width: 1110px;
 	margin: 0 auto;
 }
+
 .bgc-light {
 	background-color: $light-color;
+}
+
+.section-title {
+	margin-top: 10px;
+	margin-bottom: 5px;
+	color: $title-color;
+	font-family: "Roboto Slab";
+	font-size: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0.75px;
+}
+
+.section-subtitle {
+	padding-top: 90px;
+	font-family: "Roboto Slab";
+	font-size: 18px;
+	line-height: 24px;
+	text-align: center;
 }

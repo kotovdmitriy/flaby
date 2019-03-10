@@ -1,0 +1,31 @@
+.section {
+	&-block {
+		text-align: center;
+	}
+}
+
+.services {
+	&-block {
+		margin-top: 82px;
+		display: flex;
+		justify-content: space-between;
+		text-align: center;
+		&-item {
+			flex-basis: 30%;
+			margin-left: 0px;
+			align-self: center;
+		}
+		&-title {
+			margin-top: 50px;
+			color: $title-color;
+			font-size: 18px;
+			font-weight: 700;
+		}
+		&-text {
+			margin-top: 26px;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 26px;
+		}
+	}
+}
