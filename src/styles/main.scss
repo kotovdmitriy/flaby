@@ -3,6 +3,7 @@
 @import "utils/extends";
 @import "utils/fonts";
 @import "libs";
+@import "includes/header";
 
 
 body {
@@ -10,4 +11,9 @@ body {
 	margin: 0;
 	box-sizing: border-box;
 	font-family: 'Raleway', sans-serif;
+	color: $text-color;
+}
+.container {
+	max-width: 1110px;
+	margin: 0 auto;
 }
