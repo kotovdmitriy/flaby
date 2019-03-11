@@ -9,6 +9,7 @@
 @import "includes/other_services";
 @import "includes/feedback";
 @import "includes/resourse";
+@import "includes/price";
 
 
 body {
@@ -55,6 +56,15 @@ body {
 	box-shadow: 0 10px 16px rgba(102, 212, 244, 0.3);
 	border-radius: 25px;
 	border: none;
-	background-color: #66d4f4;
+	background-color: $accent-color;
 	padding: 17px 29px;
+	outline: none;
+	cursor: pointer;
+	&:hover {
+		background-color: darken($accent-color, 5);
+	}
+}
+
+.option-color {
+	color: $option-color;
 }

@@ -1,0 +1,61 @@
+.price {
+	background-image: url(../img/price-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	&-card {
+		margin: auto;
+		margin-top: 120px;
+		margin-bottom: 151px;
+		background-image: url(../img/price-card-bg.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		text-align: center;
+		flex-basis: 29%;
+		&__block {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+		&__img {
+			padding-top: 46px;
+		}
+		&__title {
+			margin-top: 54px;
+			color: $title-color;
+			font-weight: 700;
+		}
+		&__fee {
+			margin-top: -29px;
+			sup {
+				color: $line-color;
+				font-size: 20px;
+				font-weight: 500;
+			}
+			&--number {
+				color: linear-gradient(34deg, #6af4f9 0%, #2eb0ec 100%);
+				color: $line-color;
+				font-size: 72px;
+				font-weight: 800;
+			}
+			&--month {
+				color: $line-color;
+				font-size: 20px;
+				font-weight: 500;
+			}
+		}
+		&__list {
+			margin-top: 30px;
+			list-style-type: none;
+			padding-left: 0;
+		}
+		&__item {
+			font-size: 14px;
+			font-weight: 500;
+			line-height: 32px;
+		}
+		&__btn {
+			margin-top: 22px;
+			margin-bottom: 46px;
+		}
+	}
+}
