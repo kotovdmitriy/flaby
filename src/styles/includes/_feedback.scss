@@ -1,0 +1,42 @@
+.feedback {
+	background-image: url(../img/feedback-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 162px;
+	&-card {
+		position: relative;
+		margin: auto;
+		margin-top: 114px;
+		width: 730px;
+		height: 351px;
+		box-shadow: 0 0 51px rgba(0, 0, 0, 0.08);
+		border-radius: 10px;
+		border: 1px solid rgba(0, 0, 0, 0.08);
+		background-color: $light-color;
+		text-align: center;
+		img {
+			position: absolute;
+			top: -45px;
+			left: 312px;
+		}
+		&__title {
+			margin-top: 78px;
+			font-size: 20px;
+			font-weight: 700;
+		}
+		&__subtitle {
+			margin-top: -23px;
+			font-size: 15px;
+			font-weight: 500;
+		}
+		&__text {
+			margin: auto;
+			margin-top: 36px;
+			max-width: 580px;
+			font-size: 18px;
+			font-weight: 500;
+			line-height: 30px;
+			text-align: center;
+		}
+	}
+}
