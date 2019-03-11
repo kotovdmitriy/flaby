@@ -6,6 +6,7 @@
 @import "includes/header";
 @import "includes/services";
 @import "includes/features";
+@import "includes/other_services";
 
 
 body {
@@ -36,7 +37,7 @@ body {
 }
 
 .section-subtitle {
-	padding-top: 90px;
+	padding-top: 54px;
 	font-family: "Roboto Slab";
 	font-size: 18px;
 	line-height: 24px;
