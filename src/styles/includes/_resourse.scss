@@ -1,0 +1,39 @@
+.resourse {
+	padding-bottom: 166px;
+	&-block {
+		margin-top: 182px;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		&__text	{
+			flex-basis: 42%;
+		}
+		&__subtitle {
+			color: rgba($title-color, .4);
+			font-size: 22px;
+			font-weight: 600;
+		}
+		&__title {
+			margin-top: 16px;
+			color: $title-color;
+			font-size: 32px;
+			font-weight: 600;
+			letter-spacing: 0.2px;
+		}
+		&__desc {
+			margin-top: -4px;
+			font-size: 20px;
+			font-weight: 500;
+			line-height: 32px;
+			&-2 {
+				margin-top: 27px;
+				font-size: 14px;
+				font-weight: 500;
+				line-height: 26px;
+			}
+		}
+		&__img {
+			margin-top: -13px;
+		}
+	}
+}
