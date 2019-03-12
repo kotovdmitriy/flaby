@@ -10,6 +10,7 @@
 @import "includes/feedback";
 @import "includes/resourse";
 @import "includes/price";
+@import "includes/subscribe";
 
 
 body {
@@ -18,6 +19,10 @@ body {
 	box-sizing: border-box;
 	font-family: 'Raleway', sans-serif;
 	color: $text-color;
+}
+
+input {
+	display: block;
 }
 .container {
 	max-width: 1110px;
