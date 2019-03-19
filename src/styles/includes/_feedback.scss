@@ -50,18 +50,7 @@
 
 .arrow {
 	text-align: center;
-	position: relative;
 	cursor: pointer;
-	&-left {
-		position: absolute;
-		bottom: 0;
-		left: 34%;
-	}
-	&-right {
-		position: absolute;
-		bottom: 0;
-		right: 34%;
-	}
 }
 .slick-arrow {
 	margin-top: 32px;
@@ -74,5 +63,4 @@
 	padding: 0px 12px;
 	cursor: pointer;
 }
-
 

@@ -22,6 +22,9 @@
 		font-size: 14px;
 		font-weight: 700;
 		padding: 32px 115px 31px 107px;
+		&:focus {
+			outline: none;
+		}
 	}
 	&-input__email {
 		margin-top: 20px;
@@ -33,6 +36,9 @@
 		font-weight: 700;
 		border: none;
 		padding: 32px 110px 31px 116px;
+		&:focus {
+			outline: none;
+		}
 	}
 	&-btn {
 		margin-top: 23px;
@@ -47,5 +53,12 @@
 		border: none;
 		background-color: $accent-color;
 		padding: 30px 130px 30px 138px;
+		cursor: pointer;
+		&:focus {
+			outline: none;
+		}
+		&:hover {
+			background-color: darken($accent-color, 10);
+		}
 	}
 }

@@ -28,6 +28,7 @@ input {
 .container {
 	max-width: 1110px;
 	margin: 0 auto;
+	padding: 0px 15px;
 }
 
 .bgc-light {
@@ -69,7 +70,13 @@ input {
 	&:hover {
 		background-color: darken($accent-color, 5);
 	}
+	&--center {
+		margin: 40px auto;
+		text-align: center;
+	}
 }
+
+
 
 .option-color {
 	color: $option-color;
