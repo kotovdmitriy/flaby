@@ -1,19 +1,12 @@
 .hr-footer {
-	margin-top: 450px;
+	margin-top: 100px;
 	background-color: $light-color;
 	opacity: 0.6;
 }
 
 .subscribe {
-	&-form {
-		position: absolute;
-		left: 370px;
-		top: 60px;
-		&__block {
-			position: relative;
-		}
-	}
 	&-input__name {
+		margin: 67px auto 0;
 		box-shadow: 0 8px 16px rgba(92, 149, 161, 0.07);
 		border-radius: 38px;
 		border: 1px solid rgba(0, 0, 0, 0.03);
@@ -22,12 +15,18 @@
 		font-size: 14px;
 		font-weight: 700;
 		padding: 32px 115px 31px 107px;
+		@media(max-width: 400px) {
+			padding: 20px 70px;
+		}
+		@media(max-width: 320px) {
+			padding: 20px 70px;
+		}
 		&:focus {
 			outline: none;
 		}
 	}
 	&-input__email {
-		margin-top: 20px;
+		margin: 20px auto;
 		border-radius: 38px;
 		background-color: $input-color;
 		color: rgba($title-color, .35);
@@ -36,12 +35,19 @@
 		font-weight: 700;
 		border: none;
 		padding: 32px 110px 31px 116px;
+		@media(max-width: 400px) {
+			padding: 20px 70px;
+		}
+		@media(max-width: 320px) {
+			padding: 20px 70px;
+		}
 		&:focus {
 			outline: none;
 		}
 	}
 	&-btn {
-		margin-top: 23px;
+		display: block;
+		margin: 23px auto;
 		margin-bottom: 110px;
 		color: $light-color;
 		font-family: 'Raleway', sans-serif;
@@ -54,6 +60,12 @@
 		background-color: $accent-color;
 		padding: 30px 130px 30px 138px;
 		cursor: pointer;
+		@media(max-width: 400px) {
+			padding: 20px 70px;
+		}
+		@media(max-width: 320px) {
+			padding: 20px 70px;
+		}
 		&:focus {
 			outline: none;
 		}

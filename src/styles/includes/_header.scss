@@ -6,21 +6,51 @@ hr {
 .main-section {
 	background: url(../img/header-bg.png) no-repeat top center / cover;
 	padding-bottom: 209px;
+	@media (max-width: 768px) {
+		background: url(../img/main-bg-small.png) no-repeat top center / cover;
+	}
 }
 .header {
 	display: flex;
 	justify-content: space-between;
 	padding-top: 45px;
+	@media (max-width: 768px) {
+		flex-direction: column;
+		justify-content: center;
+	}
+	@media (max-width: 576px) {
+		flex-direction: column;
+		justify-content: center;
+	}
+	&-logo {
+		background: url(../img/logo-header.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 168px;
+		height: 51px;
+		@media(max-width: 320px) {
+			margin: auto;
+			margin-bottom: 20px;
+		}
+	}
 	&-menu {
 		display: flex;
 	}
 	&-list {
 		display: flex;
+		overflow: hidden;
+		flex-wrap: wrap;
+		@media(max-width: 320px) {
+			flex-basis: 100%;
+		}
 	}
 	&-item {
 		margin-right: 34px;
 		list-style-type: none;
 		text-transform: uppercase;
+		@media (max-width: 576px) {
+			margin-bottom: 15px;
+		}
 	}
 	&-link {
 		text-decoration: none;
@@ -47,10 +77,18 @@ hr {
 	&-text {
 		margin-top: 255px;
 		max-width: 510px;
+		@media(max-width: 768px) {
+			margin: 120px auto 0;
+		}
 		&__uppercase {
 			text-transform: uppercase;
 			color: $light-color;
 			font-size: 40px;
+			@media(max-width: 320px) {
+				margin-top: -50px;
+				font-size: 32px;
+				text-align: center;
+			}
 		}
 		&__lowercase {
 			margin-top: -23px;
@@ -59,6 +97,10 @@ hr {
 			font-size: 26px;
 			font-weight: 500;
 			line-height: 40px;
+			@media(max-width: 320px) {
+				margin-top: 20px;
+				text-align: center;
+			}
 		}
 	}
 }
@@ -89,6 +131,12 @@ hr {
 	}
 }
 
+.google-btn__block {
+	@media(max-width: 320px) {
+		margin: 0 auto;
+	}
+}
+
 .learnMore-btn {
 	margin-left: 23px;
 	color: $light-color;
@@ -102,6 +150,10 @@ hr {
 	border: none;
 	cursor: pointer;
 	outline: none;
+	@media(max-width: 320px) {
+		margin: 40px 0;
+		margin-bottom: -50px;
+	}
 	&:hover {
 		background-color: darken(#4894ce, 5);
 	}
@@ -109,4 +161,11 @@ hr {
 .fas.fa-plus,.fas.fa-equals {
 	font-size: 30px;
 	padding: 13px;
+}
+
+.google-btn__block {
+	@media(max-width: 320px) {
+		margin-left: 20px;
+		
+	}
 }

@@ -4,7 +4,7 @@
 	background-size: cover;
 	&-card {
 		width: 320px;
-		height: 581px;
+		max-height: 581px;
 		margin: auto;
 		margin-top: 120px;
 		margin-bottom: 151px;
@@ -12,9 +12,20 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		text-align: center;
+		@media(max-width: 992px) {
+			margin: 100px 10px 40px 10px;
+			&:last-child() {
+				margin-top: 0px;
+			}
+		}
+		@media(max-width: 768px) {
+			margin: 100px 10px 40px 10px;
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
 		&__block {
 			display: flex;
-			justify-content: space-between;
+			justify-content: space-around;
 			flex-wrap: wrap;
 		}
 		&__img {

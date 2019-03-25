@@ -1,10 +1,24 @@
 .other-services {
 	&-item {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		align-items: flex-start;
-		flex-basis: 31%;
+		-webkit-box-align: start;
+		    -ms-flex-align: start;
+		        align-items: flex-start;
+		-ms-flex-preferred-size: 31%;
+		    flex-basis: 31%;
 		&:nth-child(n + 4){
 			margin-top: 70px;
+			@media(max-width: 768px) {
+				margin-top: 0;
+			}
+			@media(max-width: 576px) {
+				margin-top: 0;
+			}
+			@media(max-width: 320px) {
+				margin-top: 0;
+			}
 		}
 		img {
 			margin-top: 10px;
@@ -12,9 +26,19 @@
 		&__block {
 			margin-top: 98px;
 			margin-bottom: 100px;
+			display: -webkit-box;
+			display: -ms-flexbox;
 			display: flex;
-			justify-content: space-between;
-			flex-wrap: wrap;
+			-ms-flex-pack: distribute;
+			    justify-content: space-around;
+			-ms-flex-wrap: wrap;
+			    flex-wrap: wrap;
+			@media(max-width: 768px) {
+				margin-top: 50px;
+			}
+			@media(max-width: 320px) {
+				overflow: hidden;
+			}
 		}
 		&__desc {
 			margin-left: 22px;
@@ -26,11 +50,14 @@
 		}
 		&__text {
 			margin-top: 0px;
-			max-width: 260px;
+			width: 260px;
 			font-family: Raleway;
 			font-size: 14px;
 			font-weight: 500;
 			line-height: 26px;
+			@media(max-width: 320px) {
+				width: 220px;
+			}
 		}
 	}
 }

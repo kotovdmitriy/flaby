@@ -8,6 +8,9 @@
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
+		@media(max-width: 320px) {
+			justify-content: space-around;
+		}
 	}
 	&-block {
 		img {
@@ -25,6 +28,11 @@
 		font-size: 14px;
 		font-weight: 500;
 		line-height: 28px;
+		@media(max-width: 768px) {
+			margin: auto;
+			width: 100%;
+			margin: 20px 0;
+		}
 	}
 	&__title {
 		color: $title-color;
@@ -57,5 +65,12 @@
 				font-weight: 700;
 			}
 		}
+	}
+}
+
+.footer-block-1 {
+	@media(max-width: 768px) {
+		flex-basis: 100%;
+		text-align: center;
 	}
 }
